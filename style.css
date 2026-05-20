@@ -2,12 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'inter' sans-serif;
+    /* font-family: 'inter', sans-serif; */
 }
 
 @font-face {
     font-family: "inter";
-    src: url("./Inter-Regular.otf") format("opentype");
+    src: url("./fonts/remixicon.woff2") format('woff2');
 }
 
 html,
@@ -138,11 +138,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 20dvh;
+    padding-top: 150px;
 
     & h1 {
         font-size: 97px;
-        font-weight: 700;
+        font-weight: 300;
     }
 
     & p {
@@ -342,7 +342,7 @@ main {
 
 
 /* Values section */
-#values-section{
+#values-section {
     margin-top: 60px;
     width: 100%;
     display: flex;
@@ -350,7 +350,7 @@ main {
     gap: 50px;
 }
 
-#value-card-container{
+#value-card-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -358,7 +358,7 @@ main {
     gap: 30px;
 }
 
-.value-card{
+.value-card {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -368,22 +368,26 @@ main {
     height: 50vh;
     min-height: 432px;
     text-transform: uppercase;
-    & h5{
+
+    & h5 {
         font-size: 14px;
         font-weight: 300;
     }
-    & h3{
+
+    & h3 {
         font-size: 22px;
         font-weight: 300;
     }
 }
 
-#value-card-1{
+#value-card-1 {
     background-color: #F1F5F9;
-    & h5{
+
+    & h5 {
         margin-bottom: 15%;
     }
-    & button{
+
+    & button {
         font-size: 14px;
         padding: 12px 32px;
         width: fit-content;
@@ -394,20 +398,61 @@ main {
         border-radius: 1000px;
     }
 }
-#value-card-2{
+
+#value-card-2 {
     background-color: #F1F6F5;
 }
-#value-card-3{
+
+#value-card-3 {
     background-color: #F8F8F8;
 }
-#value-card-4{
+
+#value-card-4 {
     background-color: #F8F8F8;
 }
-#value-card-5{
+
+#value-card-5 {
     background-color: #F8EDE3;
 }
-#value-card-6{
+
+#value-card-6 {
     background-color: #FFFAE7;
+}
+
+
+/* Crafting Section */
+
+#crafting-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#crafting-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 50%;
+    min-width: 650px;
+    margin: 150px 0;
+
+    & h1 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    & div {
+        display: flex;
+        gap: 35px;
+
+        & p {
+            flex: 1;
+            font-weight: 300;
+            line-height: 24px;
+            color: #52525c;
+        }
+    }
 }
 
 @media(width < 1024px) {
@@ -510,7 +555,7 @@ main {
         grid-template-rows: repeat(2, 1fr);
     }
 
-    .value-card-filler{
+    .value-card-filler {
         display: none;
     }
 
@@ -520,6 +565,7 @@ main {
         & h5 {
             font-size: 12px;
         }
+
         & h3 {
             font-size: 20px;
         }
@@ -537,6 +583,27 @@ main {
     #value-card-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+    }
+
+
+    /* Crafting Section */
+
+    #crafting-container {
+        width: 100%;
+        min-width: 100%;
+        margin-top: 100px;
+
+        & h1 {
+            font-size: 7vw;
+        }
+
+        & div {
+
+            & p {
+                line-height: 4.5vw;
+                font-size: 3vw;
+            }
+        }
     }
 }
 
@@ -594,13 +661,15 @@ main {
 
     /* Brands-section */
 
-    #card-container{
+    #card-container {
         gap: 10px;
     }
+
     #work-heading {
         & h1 {
             font-size: 35px;
         }
+
         & button {
             padding: 8px 14px;
         }
@@ -626,6 +695,27 @@ main {
 
         & h3 {
             font-size: 26px;
+        }
+    }
+
+
+    /* Crafting Section */
+
+    #crafting-container {
+        & h1 {
+            font-size: 9vw;
+            & br{
+                display: none;
+            }
+        }
+
+        & div {
+            flex-direction: column;
+            gap: 20px;
+            & p {
+                line-height: 6.5vw;
+                font-size: 4vw;
+            }
         }
     }
 
