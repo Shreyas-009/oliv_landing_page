@@ -213,7 +213,7 @@ main {
     gap: 30px;
     width: 100%;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 60px 0;
 }
 
 .strength-card {
@@ -251,9 +251,10 @@ main {
     gap: 30px;
 }
 
-#work-title {
+.section-title {
     border-bottom: 1px solid #f5f4f4;
     padding-bottom: 20px;
+    text-transform: uppercase;
     font-weight: 400;
 }
 
@@ -340,6 +341,74 @@ main {
 }
 
 
+/* Values section */
+#values-section{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#value-card-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.value-card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 50px;
+    max-height: 432px;
+    height: 50vh;
+    min-height: 432px;
+    text-transform: uppercase;
+    & h5{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    & h3{
+        font-size: 22px;
+        font-weight: 300;
+    }
+}
+
+#value-card-1{
+    background-color: #F1F5F9;
+    & h5{
+        margin-bottom: 15%;
+    }
+    & button{
+        font-size: 14px;
+        padding: 12px 32px;
+        width: fit-content;
+        background-color: black;
+        color: white;
+        border: none;
+        line-height: 28px;
+        border-radius: 1000px;
+    }
+}
+#value-card-2{
+    background-color: #F1F6F5;
+}
+#value-card-3{
+    background-color: #F8F8F8;
+}
+#value-card-4{
+    background-color: #F8F8F8;
+}
+#value-card-5{
+    background-color: #F8EDE3;
+}
+#value-card-6{
+    background-color: #FFFAE7;
+}
 
 @media(width < 1024px) {
 
@@ -433,12 +502,41 @@ main {
     #brands-section {
         margin-top: 60px;
     }
+
+    /* Values section */
+
+    #value-card-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .value-card-filler{
+        display: none;
+    }
+
+    .value-card {
+        padding: 30px;
+
+        & h5 {
+            font-size: 12px;
+        }
+        & h3 {
+            font-size: 20px;
+        }
+    }
 }
 
 @media(width < 720px) {
     #card-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
+    }
+
+    /* Values section */
+
+    #value-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }
 
@@ -475,22 +573,23 @@ main {
     /* Hero section */
     #hero-section {
         padding-top: 10dvh;
-        gap: 30px;
+        gap: 35px;
 
         & h1 {
-            font-size: 12dvw;
+            font-size: 9dvw;
             max-width: 100%;
         }
 
         & p {
-            font-size: 5.5dvw;
+            font-size: 4.5dvw;
+            line-height: 25px;
             max-width: 100%;
         }
     }
 
     #services-btn {
         padding: 12px 16px;
-        font-size: 5.6dvw;
+        font-size: 4.5dvw;
     }
 
     /* Brands-section */
@@ -507,6 +606,27 @@ main {
         }
     }
 
-    
+    .container img {
+        height: 30px;
+    }
+
+    /* Values section */
+
+    #value-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .value-card {
+        padding: 50px;
+
+        & h5 {
+            font-size: 16px;
+        }
+
+        & h3 {
+            font-size: 26px;
+        }
+    }
 
 }
