@@ -9,6 +9,10 @@
   src: url("./fonts/remixicon.woff2") format("woff2");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   width: 100%;
@@ -123,6 +127,11 @@ li:hover::after {
   gap: 40px;
   font-weight: 400;
   font-size: 14px;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #nav-dropdown {
