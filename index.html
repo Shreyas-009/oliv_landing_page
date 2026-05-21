@@ -1,311 +1,363 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>oliv Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <nav>
-        <div id="nav-left">
-            <div id="logo">
-                <img src="./logo.png" alt="logo">
-            </div>
-            <button id="nav-left-btn">We are hiring!</button>
+      <div id="nav-left">
+        <div id="logo">
+          <img src="./logo.png" alt="logo" />
         </div>
+        <button id="nav-left-btn">We are hiring!</button>
+      </div>
 
-        <button id="menu">
-            <i class="ri-menu-3-line"></i>
+      <button id="menu">
+        <i class="ri-menu-3-line"></i>
+      </button>
+      <div id="nav-right">
+        <button id="menu-close">
+          <i class="ri-close-line"></i>
         </button>
-        <div id="nav-right">
-            <button id="menu-close">
-                <i class="ri-close-line"></i>
-            </button>
-            <ul id="nav-links">
-                <li>Work</li>
-                <li>Services</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li id="nav-dropdown">
-                    <span>
-                        Pages
-                    </span>
-                    <i class="ri-arrow-down-s-line"></i>
-                </li>
-            </ul>
-            <button id="cart-btn">Cart <span id="count">0</span></button>
-            <button class="secondary-btn" id="nav-right-btn">Get in Touch</button>
-        </div>
+        <ul id="nav-links">
+          <li>Work</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li id="nav-dropdown">
+            <span> Pages </span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+        </ul>
+        <button id="cart-btn">Cart <span id="count">0</span></button>
+        <button class="secondary-btn" id="nav-right-btn">Get in Touch</button>
+      </div>
     </nav>
     <main>
+      <!-- Hero section -->
+      <!-- <section id="hero-section">
+        <h1>
+          Building Brands, One <br />
+          Success Story at a Time.
+        </h1>
+        <p>
+          Create a Brand That Resonates: We Can Help You Define and Communicate
+          Your Unique Message.
+        </p>
+        <button class="primary-btn" id="services-btn">Our Services</button>
+      </section> -->
 
-        <!-- Hero section -->
-        <section id="hero-section">
-            <h1>Building Brands, One <br>
-                Success Story at a Time.</h1>
-            <p>
-                Create a Brand That Resonates: We Can Help You
-                Define and Communicate Your Unique Message.
-            </p>
-            <button class="primary-btn" id="services-btn">
-                Our Services
+      <!-- Brands section -->
+      <!-- <section id="brands-section">
+        <div class="brands-track">
+          <div class="container">
+            <img src="./brands/brand1.png" />
+            <img src="./brands/brand2.png" />
+            <img src="./brands/brand3.png" />
+            <img src="./brands/brand4.png" />
+            <img src="./brands/brand5.png" />
+            <img src="./brands/brand6.png" />
+          </div>
+          <div class="container">
+            <img src="./brands/brand1.png" />
+            <img src="./brands/brand2.png" />
+            <img src="./brands/brand3.png" />
+            <img src="./brands/brand4.png" />
+            <img src="./brands/brand5.png" />
+            <img src="./brands/brand6.png" />
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Strength section -->
+      <!-- <section id="strength-section">
+        <div class="strength-card">
+          <h2>Brand Strategy</h2>
+          <p>
+            We help businesses <br />define their unique brand <br />message and
+            branding <br />positioning.
+          </p>
+          <h4><u>About Strategy</u></h4>
+        </div>
+        <div class="strength-card">
+          <h2>Visual Identity</h2>
+          <p>
+            We create visual <br />elements such as logos, <br />packaging, and
+            marketing <br />materials for your brand.
+          </p>
+          <h4><u>About Identity</u></h4>
+        </div>
+        <div class="strength-card">
+          <h2>Digital Marketing</h2>
+          <p>
+            We help businesses to <br />promote their brand<br />online and
+            create<br />engaging digital <br />experiences.
+          </p>
+          <h4><u>About Marketing</u></h4>
+        </div>
+        <div class="strength-card">
+          <h2>Brand Manage­ment</h2>
+          <p>
+            We help businesses to <br />implement their brand <br />across all
+            touchpoints <br />and ensure consistency.
+          </p>
+          <h4><u>About Management</u></h4>
+        </div>
+      </section> -->
+
+      <!-- Work Section -->
+      <!-- <section id="work-section">
+        <h6 class="section-title">OUR WORK</h6>
+        <div id="work-heading">
+          <h1>Selected Work</h1>
+          <button class="secondary-btn">All Work</button>
+        </div>
+        <div id="card-container">
+          <div class="work-card">
+            <div class="img-container">
+              <img src="./work/work1.png" alt="work1" />
+            </div>
+            <div class="work-card-footer">
+              <h4>Invision Studio</h4>
+              <button class="secondary-btn">Marketing</button>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img src="./work/work2.png" alt="work2" />
+            </div>
+            <div class="work-card-footer">
+              <h4>Square Media</h4>
+              <button class="secondary-btn">Branding</button>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img src="./work/work3.png" alt="work3" />
+            </div>
+            <div class="work-card-footer">
+              <h4>Vision Design</h4>
+              <button class="secondary-btn">Social Medial</button>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img src="./work/work4.png" alt="work4" />
+            </div>
+            <div class="work-card-footer">
+              <h4>Design Bros</h4>
+              <button class="secondary-btn">Branding</button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Values section -->
+      <!-- <section id="values-section">
+        <h6 class="section-title">our values</h6>
+        <div id="value-card-container">
+          <div id="value-card-1" class="value-card">
+            <div>
+              <h5>Services</h5>
+              <h3>
+                Our Approach to <br />
+                Branding.
+              </h3>
+            </div>
+            <button class="primary-btn">
+              <span>About Oliv</span>
+              <i class="ri-arrow-right-up-line"></i>
             </button>
-        </section>
+          </div>
+          <div id="value-card-2" class="value-card">
+            <h5>
+              Helping Brands <br />
+              Stand Out
+            </h5>
+            <h3>
+              Bold Moves,<br />
+              Big Impact.
+            </h3>
+          </div>
+          <div id="value-card-3" class="value-card">
+            <h5>
+              How We Work <br />
+              with Our Client
+            </h5>
+            <h3>
+              Honesty is the <br />
+              Best Policy.
+            </h3>
+          </div>
+          <div class="value-card-filler"></div>
+          <div class="value-card-filler"></div>
+          <div id="value-card-4" class="value-card">
+            <h5>Collaboration is Key</h5>
+            <h3>
+              Building Strong <br />
+              Partnerships.
+            </h3>
+          </div>
+          <div id="value-card-5" class="value-card">
+            <h5>Our Approach</h5>
+            <h3>
+              Achieving <br />
+              Real Results.
+            </h3>
+          </div>
+          <div id="value-card-6" class="value-card">
+            <h5>Our Philosophy</h5>
+            <h3>
+              Building Trust, <br />
+              Not Pitching.
+            </h3>
+          </div>
+        </div>
+      </section> -->
 
-        <!-- Brands section -->
-        <section id="brands-section">
+      <!-- Crafting Section -->
+      <!-- <section id="crafting-section">
+        <div id="crafting-container">
+          <h1>
+            Crafting Exceptional Digital <br />
+            Experiences Across Al <br />
+            Platforms: Our Goal at Øliv.
+          </h1>
+          <div>
+            <p>
+              At Øliv, our goal is to craft exceptional digital experiences
+              across all platforms. In today's digitally driven world, having a
+              strong online presence is paramount for businesses to connect with
+              their target audience effectively. We understand the importance of
+              delivering seamless and engaging experiences that leave a lasting
+              impression.
+            </p>
+            <p>
+              Our team of skilled designers, developers, and digital strategists
+              collaborate to create customized digital solutions tailored to
+              your unique business needs. Whether it's designing a user-friendly
+              website, developing a mobile application, or enhancing your
+              e-commerce platform, we strive to provide solutions that not only
+              meet but exceed your expectations.
+            </p>
+          </div>
+        </div>
+      </section> -->
 
-            <div class="brands-track">
-                <div class="container">
-                    <img src="./brands/brand1.png">
-                    <img src="./brands/brand2.png">
-                    <img src="./brands/brand3.png">
-                    <img src="./brands/brand4.png">
-                    <img src="./brands/brand5.png">
-                    <img src="./brands/brand6.png">
-                </div>
-                <div class="container">
-                    <img src="./brands/brand1.png">
-                    <img src="./brands/brand2.png">
-                    <img src="./brands/brand3.png">
-                    <img src="./brands/brand4.png">
-                    <img src="./brands/brand5.png">
-                    <img src="./brands/brand6.png">
-                </div>
+      <!-- Teams Section -->
+      <section id="teams-section">
+        <h6 class="section-title">our team</h6>
+        <div id="teams-heading">
+          <h1>Our Team of Experts</h1>
+          <button class="secondary-btn">About Us</button>
+        </div>
+        <div id="teams-container">
+          <div id="team-info-card">
+            <div>
+              <h4>Join the Team</h4>
+              <h2>Want to shape the future of branding?</h2>
+              <p>Join us and shape the future of branding today!</p>
             </div>
+            <button class="primary-btn">About Oliv</button>
+          </div>
+          <div class="team-card">
+            <div class="team-img-container">
+              <img src="./team/person1.png" alt="person1" />
+              <div class="team-img-icons">
+                <i class="ri-instagram-line"></i>
+                <i class="ri-twitter-line"></i>
+                <i class="ri-behance-line"></i>
+              </div>
+            </div>
+            <div class="team-card-footer">
+              <h3>Annette Black</h3>
+              <button class="secondary-btn">Branding</button>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-img-container">
+              <img src="./team/person2.png" alt="person2" />
+              <div class="team-img-icons">
+                <i class="ri-instagram-line"></i>
+                <i class="ri-twitter-line"></i>
+                <i class="ri-behance-line"></i>
+              </div>
+            </div>
+            <div class="team-card-footer">
+              <h3>Annette Black</h3>
+              <button class="secondary-btn">Branding</button>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-img-container">
+              <img src="./team/person3.png" alt="person3" />
+              <div class="team-img-icons">
+                <i class="ri-instagram-line"></i>
+                <i class="ri-twitter-line"></i>
+                <i class="ri-behance-line"></i>
+              </div>
+            </div>
+            <div class="team-card-footer">
+              <h3>Annette Black</h3>
+              <button class="secondary-btn">Branding</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
-
-        <!-- Strength section -->
-        <section id="strength-section">
-            <div class="strength-card">
-                <h2>Brand Strategy</h2>
-                <p>We help businesses <br>define their unique brand <br>message and
-                    branding <br>positioning.</p>
-                <h4><u>About Strategy</u></h4>
-            </div>
-            <div class="strength-card">
-                <h2>Visual Identity</h2>
-                <p>We create visual <br>elements such as logos, <br>packaging, and
-                    marketing <br>materials for your brand.</p>
-                <h4><u>About Identity</u></h4>
-            </div>
-            <div class="strength-card">
-                <h2>Digital Marketing</h2>
-                <p>We help businesses to <br>promote their brand<br>online and
-                    create<br>engaging digital <br>experiences.</p>
-                <h4><u>About Marketing</u></h4>
-            </div>
-            <div class="strength-card">
-                <h2>Brand Manage­ment</h2>
-                <p>We help businesses to <br>implement their brand <br>across all
-                    touchpoints <br>and ensure consistency.</p>
-                <h4><u>About Management</u></h4>
-            </div>
-        </section>
-
-        <!-- Work Section -->
-        <section id="work-section">
-            <h6 class="section-title">OUR WORK</h6>
-            <div id="work-heading">
-                <h1>Selected Work</h1>
-                <button class="secondary-btn">All Work</button>
-            </div>
-            <div id="card-container">
-                <div class="work-card">
-                    <div class="img-container">
-                        <img src="./work/work1.png" alt="work1">
-                    </div>
-                    <div class="work-card-footer">
-                        <h4>Invision Studio</h4>
-                        <button class="secondary-btn">Marketing</button>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="img-container">
-                        <img src="./work/work2.png" alt="work2">
-                    </div>
-                    <div class="work-card-footer">
-                        <h4>Square Media</h4>
-                        <button class="secondary-btn">Branding</button>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="img-container">
-                        <img src="./work/work3.png" alt="work3">
-                    </div>
-                    <div class="work-card-footer">
-                        <h4>Vision Design</h4>
-                        <button class="secondary-btn">Social Medial</button>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="img-container">
-                        <img src="./work/work4.png" alt="work4">
-                    </div>
-                    <div class="work-card-footer">
-                        <h4>Design Bros</h4>
-                        <button class="secondary-btn">Branding</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Values section -->
-        <section id="values-section">
-            <h6 class="section-title">our values</h6>
-            <div id="value-card-container">
-                <div id="value-card-1" class="value-card">
-                    <div>
-                        <h5>Services</h5>
-                        <h3>Our Approach to <br>
-                            Branding.</h3>
-                    </div>
-                    <button class="primary-btn">
-                        <span>About Oliv</span>
-                        <i class="ri-arrow-right-up-line"></i>
-                    </button>
-                </div>
-                <div id="value-card-2" class="value-card">
-                    <h5>Helping Brands <br>
-                        Stand Out</h5>
-                    <h3>Bold Moves,<br>
-                        Big Impact.</h3>
-                </div>
-                <div id="value-card-3" class="value-card">
-                    <h5>How We Work <br>
-                        with Our Client</h5>
-                    <h3>Honesty is the <br>
-                        Best Policy.</h3>
-                </div>
-                <div class="value-card-filler"></div>
-                <div class="value-card-filler"></div>
-                <div id="value-card-4" class="value-card">
-                    <h5>Collaboration is Key</h5>
-                    <h3>Building Strong <br>
-                        Partnerships.</h3>
-                </div>
-                <div id="value-card-5" class="value-card">
-                    <h5>Our Approach</h5>
-                    <h3>Achieving <br>
-                        Real Results.</h3>
-                </div>
-                <div id="value-card-6" class="value-card">
-                    <h5>Our Philosophy</h5>
-                    <h3>Building Trust, <br>
-                        Not Pitching.</h3>
-                </div>
-            </div>
-        </section>
-
-        <!-- Crafting Section -->
-        <section id="crafting-section">
-            <div id="crafting-container">
-                <h1>
-                    Crafting Exceptional Digital <br>
-                    Experiences Across Al <br>
-                    Platforms: Our Goal at Øliv.
-                </h1>
-                <div>
-                    <p>At Øliv, our goal is to craft exceptional digital experiences across all platforms. In today's
-                        digitally driven world,
-                        having a strong online presence is paramount for businesses to connect with their target
-                        audience
-                        effectively. We
-                        understand the importance of delivering seamless and engaging experiences that leave a lasting
-                        impression.
-                    </p>
-                    <p>Our team of skilled designers, developers, and digital strategists collaborate to create
-                        customized
-                        digital solutions
-                        tailored to your unique business needs. Whether it's designing a user-friendly website,
-                        developing a
-                        mobile application,
-                        or enhancing your e-commerce platform, we strive to provide solutions that not only meet but
-                        exceed
-                        your expectations.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Teams Section -->
-        <section id="teams-section">
-            <h6 class="section-title">our team</h6>
-            <div id="teams-heading">
-                <h1>Our Team of Experts</h1>
-                <button class="secondary-btn">About Us</button>
-            </div>
-            <div id="teams-container">
-                <div id="team-info-card">
-                    <div>
-                        <h4>
-                            Join the Team
-                        </h4>
-                        <h2>
-                            Want to
-                            shape the
-                            future of
-                            branding?
-                        </h2>
-                        <p>
-                            Join us and shape the
-                            future of branding today!
-                        </p>
-                    </div>
-                    <button class="primary-btn">
-                        About Oliv
-                    </button>
-                </div>
-                <div class="team-card">
-                    <div class="team-img-container">
-                        <img src="./team/person1.png" alt="person1">
-                        <div class="team-img-icons">
-                            <i class="ri-instagram-line"></i>
-                            <i class="ri-twitter-line"></i>
-                            <i class="ri-behance-line"></i>
-                        </div>
-                    </div>
-                    <div class="team-card-footer">
-                        <h3>Annette Black</h3>
-                        <button class="secondary-btn">Branding</button>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-img-container">
-                        <img src="./team/person2.png" alt="person2">
-                        <div class="team-img-icons">
-                            <i class="ri-instagram-line"></i>
-                            <i class="ri-twitter-line"></i>
-                            <i class="ri-behance-line"></i>
-                        </div>
-                    </div>
-                    <div class="team-card-footer">
-                        <h3>Annette Black</h3>
-                        <button class="secondary-btn">Branding</button>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-img-container">
-                        <img src="./team/person3.png" alt="person3">
-                        <div class="team-img-icons">
-                            <i class="ri-instagram-line"></i>
-                            <i class="ri-twitter-line"></i>
-                            <i class="ri-behance-line"></i>
-                        </div>
-                    </div>
-                    <div class="team-card-footer">
-                        <h3>Annette Black</h3>
-                        <button class="secondary-btn">Branding</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Logo Section -->
+      <section id="logo-section">
+        <div class="logo-card">
+          <div class="logo-card-left">
+            <img src="./brands/brand3.png" alt="" />
+          </div>
+          <div class="logo-card-right">
+            <h3>
+              “We couldn't be happier with the branding <br> strategy developed.”
+            </h3>
+            <p>
+              We approached Øliv for a complete rebranding of our company and we
+              couldn't be happier with the results. Their market research and
+              analysis helped us define our target audience and unique brand
+              positioning. Their team then created a visually compelling logo
+              and consistent branding across all touchpoints.
+            </p>
+            <p>
+              The new brand has helped us stand out in the market and increase
+              sales. We highly recommend Øliv to any business looking to rebrand
+              or refresh their brand.
+            </p>
+          </div>
+        </div>
+        <div class="logo-card">
+          <div class="logo-card-left">
+            <img src="./brands/brand1.png" alt="" />
+          </div>
+          <div class="logo-card-right">
+            <h3>“Expert Brand Management from Øliv”</h3>
+            <p>
+              As a growing business, it was important for us to have a strong
+              and consistent brand. Øliv's brand management services helped us
+              to achieve this. They conducted a thorough brand audit and
+              provided valuable insights and recommendations.
+            </p>
+            <p>
+              Their ongoing monitoring and implementation of our brand has
+              helped us maintain consistency and stay aligned with our business
+              goals. We couldn't be happier with the results and highly
+              recommend Øliv's brand management services.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
