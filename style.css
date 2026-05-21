@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'inter', sans-serif; */
 }
 
 @font-face {
@@ -16,6 +15,36 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
+
+/* common ui */
+.primary-btn{
+    width: fit-content;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1000px;
+    font-family: "inter";
+    white-space: nowrap;
+}
+
+.secondary-btn{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 1000px;
+    font-weight: 400;
+    font-family: "inter";
+    white-space: nowrap;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+
 
 /* Nav Section */
 nav {
@@ -117,11 +146,7 @@ li:hover::after {
 
 #nav-right-btn {
     padding: 12px;
-    border: 1px solid black;
-    border-radius: 1000px;
     font-size: 14px;
-    font-weight: 400;
-    background-color: transparent;
 }
 
 /* Hero section */
@@ -156,11 +181,6 @@ main {
 #services-btn {
     font-size: 20px;
     padding: 20px 30px;
-    width: fit-content;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 1000px;
 }
 
 /* Brands-section */
@@ -256,9 +276,11 @@ main {
     padding-bottom: 20px;
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 14px;
+    font-family: 'inter';
 }
 
-#work-heading {
+#work-heading , #teams-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,18 +291,7 @@ main {
     }
 
     & button {
-        width: fit-content;
-        height: fit-content;
         padding: 15px 25px;
-        text-align: center;
-        border: 1px solid black;
-        background-color: transparent;
-        border-radius: 1000px;
-
-        &:hover {
-            background-color: black;
-            color: white;
-        }
     }
 }
 
@@ -325,17 +336,7 @@ main {
         }
 
         & button {
-            width: fit-content;
-            height: fit-content;
             padding: 6px 12px;
-            border: 1px solid black;
-            background-color: transparent;
-            border-radius: 1000px;
-
-            &:hover {
-                background-color: black;
-                color: white;
-            }
         }
     }
 }
@@ -390,12 +391,7 @@ main {
     & button {
         font-size: 14px;
         padding: 12px 32px;
-        width: fit-content;
-        background-color: black;
-        color: white;
-        border: none;
         line-height: 28px;
-        border-radius: 1000px;
     }
 }
 
@@ -427,6 +423,7 @@ main {
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin: 150px 0;
 }
 
 #crafting-container {
@@ -435,7 +432,6 @@ main {
     gap: 35px;
     width: 50%;
     min-width: 650px;
-    margin: 150px 0;
 
     & h1 {
         font-size: 50px;
@@ -454,6 +450,123 @@ main {
         }
     }
 }
+
+/* Teams Section */
+
+#teams-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#teams-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+#team-info-card{
+    min-height: 475px;
+    height: 50vh;
+    max-height: 475px;
+    width: 100%;
+    background-color: #F1F6F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    padding-bottom: 25px;
+
+    & div{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    & h4{
+        text-transform: uppercase;
+        font-weight: 200;
+        font-family: 'inter';
+    }
+    & h2{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    & p{
+        color: #9f9fa9;
+        line-height: 24px;
+    }
+     & button {
+        font-size: 14px;
+        padding: 12px 32px;
+        line-height: 28px;
+    }
+}
+
+.team-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .team-img-container{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        flex: 1;
+
+        &:hover{
+           .team-img-icons{
+                transform: translateY(-60px);
+            }
+        }
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        & .team-img-icons{
+            position: absolute;
+            right: 30px;
+            transform: translate(0);
+            display: flex;
+            gap: 10px;
+            transition: 0.4s ease-in-out;
+
+            & i{
+                background: #000;
+                color: white;
+                border-radius: 1000px;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .team-card-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+        & h3{
+            font-weight: 300;
+            font-family: 'inter';
+        }
+        & button{
+            font-size: 14px;
+            font-weight: 300;
+            padding: 4px 12px;
+            line-height: 20px;
+        }
+    }
+}
+
+
 
 @media(width < 1024px) {
 
@@ -570,6 +683,12 @@ main {
             font-size: 20px;
         }
     }
+
+    /* Teams section */
+
+    #teams-container{
+        grid-template-columns: repeat(3 , 1fr);
+    }
 }
 
 @media(width < 720px) {
@@ -588,10 +707,13 @@ main {
 
     /* Crafting Section */
 
+    #crafting-section{
+        margin: 100px 0;
+    }
+
     #crafting-container {
         width: 100%;
         min-width: 100%;
-        margin-top: 100px;
 
         & h1 {
             font-size: 7vw;
@@ -604,6 +726,12 @@ main {
                 font-size: 3vw;
             }
         }
+    }
+
+     /* Teams section */
+
+    #teams-container{
+        grid-template-columns: repeat(2 , 1fr);
     }
 }
 
@@ -665,7 +793,7 @@ main {
         gap: 10px;
     }
 
-    #work-heading {
+    #work-heading , #teams-heading {
         & h1 {
             font-size: 35px;
         }
@@ -718,5 +846,13 @@ main {
             }
         }
     }
+
+
+     /* Teams section */
+
+    #teams-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 
 }
